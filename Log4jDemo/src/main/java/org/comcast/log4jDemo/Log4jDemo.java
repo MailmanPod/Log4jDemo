@@ -15,10 +15,11 @@ public class Log4jDemo {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss zZ");
 		String formatDate = sdf.format(new Date());
 		
-		System.out.println("Application started at: " + formatDate);
+		String startMsg = "Application started at: " + formatDate;
 		
 		Logger logger = LogManager.getLogger();
 		
+		logger.info(startMsg);
 		logger.info("Info Message");
 		logger.debug("Debug msg");
 		logger.error("Corta la bocha");
