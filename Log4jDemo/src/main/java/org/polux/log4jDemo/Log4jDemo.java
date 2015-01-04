@@ -1,4 +1,4 @@
-package org.comcast.log4jDemo;
+package org.polux.log4jDemo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
