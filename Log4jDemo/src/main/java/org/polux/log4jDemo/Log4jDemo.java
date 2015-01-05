@@ -19,10 +19,13 @@ public class Log4jDemo {
 		
 		Logger logger = LogManager.getLogger();
 		
+		String entryName = args[0];
+		
 		logger.info(startMsg);
 		logger.info("Info Message");
 		logger.debug("Debug msg");
 		logger.error("Corta la bocha");
 		logger.info("Class: " + Log4jDemo.class.getCanonicalName());
+		logger.info("Username: " + entryName);
 	}
 }
